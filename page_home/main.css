@@ -1,0 +1,382 @@
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+    
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, body{
+    margin: 0;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.header__item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.header__logo{
+    margin-top: 82px;
+    text-align: center;
+}
+
+.header__logo p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    
+    font-size: 24px;
+}
+
+.nav{
+    margin-top: 182px;
+    list-style: none;
+}
+
+.nav__link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #B9B9B9;
+}
+
+.nav__link:hover{
+    color: #FF3C5A;
+}
+
+.active{
+    color: #FF3C5A;
+}
+
+.active svg{
+    stroke: #FF3C5A;
+}
+
+
+.nav li{
+    margin-bottom: 32px;    
+    
+}
+
+.nav_svg{
+    stroke:#B9B9B9;
+}
+
+
+.nav li:last-child{
+    margin-bottom: 0;
+}
+
+.nav svg{
+    margin-right: 12px;
+}
+
+.nav img {
+    margin-right: 12px;
+}
+
+.main__item{    
+    width: 75%;
+    height: 100%;
+    margin: 20px 20px 20px 0;
+    border-radius: 50px;
+    padding: 62px 0 92px;
+    background-color: #EDEDED;
+}
+
+.main__head{
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+
+
+.main__head h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.main__head p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.main__inner{
+    margin: 0 92px 40px;
+}
+
+.main__inner:last-child{
+    margin: 0 92px;
+}
+
+.main__inner p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main__inner-title span{
+    color: #FF3C5A;
+    font-weight: 600;
+}
+
+.main__block{
+    width: 100%;
+}
+
+.float{
+    float: left;
+}
+
+.main__block-item__float{
+    width: 200px;
+    height: 200px;
+    background-color: #ffff;    
+    float: left;
+
+    margin-bottom: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 4px 0px rgba(34, 60, 80, 0.25);
+}
+.main__block-item__float:nth-child(2n+2){
+    margin: 0 25px;
+}
+
+.main__block-item__float:last-child{
+    margin-right: 0;
+    float: right;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+/* .grid:last-child{
+    gap: ;
+} */
+
+.main__block-item__grid{
+    width: 200px;
+    background-color: #ffff;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 4px 0px rgba(34, 60, 80, 0.25);
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__block-item__flex{
+    width: 200px;
+    background-color: #ffff;
+    height: 200px;    
+    margin-bottom: 20px; 
+    border-radius: 6px;
+    box-shadow: 0px 8px 4px 0px rgba(34, 60, 80, 0.25);
+}
+
+.courses{
+    margin: 20px 20px 20px 0;
+    padding: 87px 50px 40px;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    width: 75%;
+}
+
+.courses h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.courses__wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.courses__items{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 175px 175px 175px 175px 175px;
+    justify-content: space-between;
+}
+
+.courses__link{
+    height: 175px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.courses__link:nth-child(5n+5){
+    margin-right: 0;
+}
+
+.courses__link svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.courses__img{
+    fill: #B9B9B9;
+    transition: fill .2s ease-in;
+}
+.active{
+    fill: #FF3C5A;
+}
+.courses__img:hover{
+    fill: #FF3C5A;
+}
+
+.courses__link p{
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.contacts{
+    margin: 20px 20px 20px 0;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacts__item{
+    margin: 87px 35px 0 50px;
+    width: 100%;
+}
+
+.contacts__form{
+    margin-top: 20px;
+}
+
+.contacts__name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contacts__name label{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #B9B9B9;
+}
+
+.contacts__name input{
+    background: none;
+    border: none;
+    margin-top: 5px;
+    border-bottom: 2px solid #B9B9B9;
+    outline: none;
+}
+
+.contacts__name input:focus{
+    border-bottom: 2px solid #FF3C5A;
+}
+
+.contacts__email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contacts__email label{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #B9B9B9;
+}
+
+.contacts__email input{
+    background: none;
+    border: none;
+    margin-top: 5px;
+    border-bottom: 2px solid #B9B9B9;
+    outline: none;
+}
+
+.contacts__email input:focus{
+    border-bottom: 2px solid #FF3C5A;
+}
+
+.contacts__message label{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #B9B9B9;
+}
+
+.contacts__message{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.contacts__message textarea{
+    background: none;
+    border: none;    
+    resize:none;
+    margin-top: 5px;
+    border-bottom: 2px solid #B9B9B9;
+    outline: none;
+}
+.contacts__message textarea:focus{
+    border-bottom: 2px solid #FF3C5A;
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.send__btn{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #FF3C5A;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background .2s ease-in;
+}
+
+.send__btn:hover{
+    background: #000;
+}
