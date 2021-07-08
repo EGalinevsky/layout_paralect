@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pageCss/courses.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
     <title>Courses</title>
 </head>
 <body>
     <main class="main">
         <div class="container">
-            <div class="header__item">
-                <div class="header__logo">
+            <div class="header__item" id="header__item">
+                <div class="header__logo--desctop">
                     <img src="../utils/Frame.png" alt="logo">
                     <p>
                         Startup Summer
                     </p>
                 </div>
-
+                <div id="clouse__courses" class="navbar--close">
+                    <span class="navbar__icon--close"></span>
+                </div>
                 <ul class="nav" id="nav">
                     <li>
                         <a class="nav__link" href="./index.html">
@@ -75,11 +77,23 @@
             </div>            
 
             <div class="courses">
+                <div class="navbar" id="navbar_open">
+                    <span class="navbar__icon"></span>
+                </div>
+                <div class="logo__mobile">
+                    <div class="header__logo-mobile">
+                        <img src="../utils/Frame.png" alt="logo">
+                        <p>
+                            Startup Summer
+                        </p>
+                    </div>
+                </div>
                     <h2>Courses</h2>
+                    
                     <div class="courses__wrapper">
                         <div class="courses__items">
                             <a class="courses__link" href="#">
-                                <svg class="courses__img active" width="175" height="133" viewBox="0 0 175 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="courses__img" width="175" height="133" viewBox="0 0 175 133" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M63.5341 -84.8303C121.739 -81.7185 162.426 -56.5407 189.268 -27.9681C216.11 0.604439 220.913 35.9665 179.379 86.605C163.839 103.013 142.93 133 107.046 133C93.4842 133 79.3568 125.362 69.7502 113.197C56.4705 95.9406 47.1464 73.8746 37.5398 52.3745C27.9332 30.8744 12.1105 2.58471 4.48171 -14.3891C-6.82019 -39.8498 -0.0390499 -88.2251 63.5341 -84.8303Z" />
                                 </svg>
                                 <p>Git</p>

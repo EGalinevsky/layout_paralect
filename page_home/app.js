@@ -12,3 +12,24 @@
 //       this.className += " active"
 //     });
 //   } 
+
+
+// const btnClose = document.querySelector('#clouse__courses')
+
+// const btnOpen = document.querySelector('#navbar_open')
+
+// btnClose.addEventListener('click', ()=>{
+//     let close = document.querySelector('#header__item')
+    
+//     close.style.display = 'none'
+//     let course = document.querySelector('.courses')
+//     course.style.display = 'block'
+// })
+
+// btnOpen.addEventListener('click', ()=>{
+//     let close = document.querySelector('#header__item')
+    
+//     close.style.display = 'flex'
+//     let course = document.querySelector('.courses')
+//     course.style.display = 'none'
+// })

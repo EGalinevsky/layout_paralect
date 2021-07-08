@@ -1,0 +1,345 @@
+.contacts{
+    margin: 20px 20px 20px 0;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacts__item{
+    margin: 87px 35px 0 50px;
+    width: 30%;
+}
+
+.contacts__form{
+    margin-top: 20px;
+}
+
+.contacts__name{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.contacts__name input{
+    background: none;
+    border: none;
+    padding-top: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.label__name{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #B9B9B9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    border-bottom: 1px solid #B9B9B9;   
+}
+
+.label__name::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #FF3C5A;
+    transform: translateX(-100%);
+    transition: transform .3s ease ;
+}
+.name__span{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.contacts__name input:focus + .label__name .name__span,
+.contacts__name input:valid + .label__name .name__span{
+    transform: translateY(-120%);
+}
+
+.contacts__name input:focus + .label__name::after,
+.contacts__name input:valid + .label__name::after{
+    transform: translateX(0%);
+}
+
+.contacts__email{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.contacts__email input{
+    background: none;
+    border: none;
+    padding-top: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.label__email{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #B9B9B9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    border-bottom: 1px solid #B9B9B9;   
+}
+
+.label__email::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #FF3C5A;
+    transform: translateX(-100%);
+    transition: transform .3s ease ;
+}
+
+.email_name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.contacts__email input:focus + .label__email .email_name,
+.contacts__email input:valid + .label__email .email_name{
+    transform: translateY(-120%);
+}
+
+.contacts__email input:focus + .label__email::after,
+.contacts__email input:valid + .label__email::after{
+    transform: translateX(0%);
+}
+
+
+.contacts__message{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+
+.contacts__message textarea{
+    background: none;
+    border: none;
+    padding-top: 70px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    resize:none;
+    outline: none;
+}
+
+.message__label{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #B9B9B9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    border-bottom: 1px solid #B9B9B9;   
+}
+
+.message__label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #FF3C5A;
+    transform: translateX(-100%);
+    transition: transform .3s ease ;
+}
+
+.message__title{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.contacts__message textarea:focus + .message__label .message__title,
+.contacts__message textarea:valid + .message__label .message__title{
+    transform: translateY(-300%);
+}
+
+.contacts__message textarea:focus + .message__label::after,
+.contacts__message textarea:valid + .message__label::after{
+    transform: translateX(0%);
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.send__btn{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #FF3C5A;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background .2s ease-in;
+}
+
+.send__btn:hover{
+    background: #000;
+}
+
+
+.contacts__img{
+    width: 60%;
+    height: 932px;
+    background: url('../../utils/Vector.svg') no-repeat ;
+}
+
+.navbar{
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
+.navbar__icon{    
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    position: relative;
+    border-radius: 20px;
+}
+
+.navbar__icon::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: -6px;
+    border-radius: 20px;
+}
+
+.navbar__icon::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 5.5px;
+    border-radius: 20px;
+}
+
+.header__logo-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contacts__img{
+        width: 50%;
+    }
+    .contacts__item{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contacts{
+        padding: px;
+        height: 932px;
+    }
+    .contacts__item{
+        width: 100%;
+        margin: 80px 20px 0 ;
+    }
+    .contacts__img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar{
+        display: block;
+    }
+    .contacts{
+        width: 100%;
+        padding: 36px 20px 0px;
+        margin: 0;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .header__logo-mobile{
+        display: block;
+    }
+    
+    .contacts{
+        width: 100%;
+        margin: 0;
+        border-radius: none;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contacts__item{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 260px;
+    }
+    .contacts__img{
+        margin-top: 20px;
+        width: 375px;
+        height: 250px;
+        position: absolute; 
+        bottom: 0; 
+        right: 0;
+        background: url(../../utils/Vector.png) no-repeat bottom;
+    }
+}

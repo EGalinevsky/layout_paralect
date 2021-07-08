@@ -1,0 +1,128 @@
+.courses{
+    margin: 20px 20px 20px 0;
+    padding: 87px 50px 40px;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    width: 75%;
+}
+
+.courses h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.courses__wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.courses__items{
+    width: 100%;
+    display: grid; 
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+}
+
+.courses__link{
+    height: 175px;
+    background-color: #fff;
+    position: relative;
+}
+
+.courses__link:nth-child(5n+5){
+    margin-right: 0;
+}
+
+.courses__link svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.courses__img{
+    fill: #B9B9B9;
+    transition: fill .2s ease-in;
+}
+.active{
+    fill: #FF3C5A;
+}
+.courses__img:hover{
+    fill: #FF3C5A;
+}
+
+.courses__link p{
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.navbar{
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
+.navbar__icon{    
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    position: relative;
+    border-radius: 20px;
+}
+
+.navbar__icon::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: -6px;
+    border-radius: 20px;
+}
+
+.navbar__icon::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 5.5px;
+    border-radius: 20px;
+}
+
+.header__logo-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar{
+        display: block;
+    }
+    .courses{
+        width: 100%;
+        padding: 36px 20px ;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .header__logo-mobile{
+        display: block;
+    }
+    
+    .courses{
+        width: 100%;
+        margin: 0;
+        border-radius: none;
+        display: block;
+    }
+}

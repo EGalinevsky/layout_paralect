@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="pageCss/contacts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,11 +19,14 @@
     <main class="main">
         <div class="container">
             <div class="header__item">
-                <div class="header__logo">
+                <div class="header__logo--desctop">
                     <img src="../utils/Frame.png" alt="logo">
                     <p>
                         Startup Summer
                     </p>
+                </div>
+                <div class="navbar--close">
+                    <span class="navbar__icon--close"></span>
                 </div>
 
                 <ul class="nav" id="nav">
@@ -36,7 +40,6 @@
                                 <path d="M6.17847 21.5V11.5H12.0285V21.5" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-
                             Home
                         </a>
                     </li>
@@ -76,6 +79,17 @@
 
             </div>
             <div class="contacts">
+                <div class="navbar" id="navbar_open">
+                    <span class="navbar__icon"></span>
+                </div>
+                <div class="logo__mobile">
+                    <div class="header__logo-mobile">
+                        <img src="../utils/Frame.png" alt="logo">
+                        <p>
+                            Startup Summer
+                        </p>
+                    </div>
+                </div>
                 <div class="contacts__item">
                     <h1>Contacts</h1>
                     <form class="contacts__form" action="">
@@ -93,8 +107,11 @@
                         </div>
 
                         <div class="contacts__message">
-                            <label for="input__email">Message</label>
-                            <textarea type="text"></textarea>
+                            <textarea type="text" required autocomplete="off"></textarea>
+                            <label for="input__email" class="message__label">
+                                <span class="message__title">Message</span>
+                            </label>
+                            
                         </div>
                     </form>
                     <div class="btn">
@@ -104,7 +121,7 @@
 
                 </div>
 
-                <img class="contacts__img" src="../utils/Vector.svg" alt="">
+                <div class="contacts__img"></div>
             </div>
 
         </div>
