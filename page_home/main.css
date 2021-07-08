@@ -281,54 +281,125 @@ ul{
 
 .contacts__name{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.contacts__name label{
-    font-weight: normal;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: #B9B9B9;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
 }
 
 .contacts__name input{
     background: none;
     border: none;
+    padding-top: 10px;
     margin-top: 5px;
-    border-bottom: 2px solid #B9B9B9;
+    width: 100%;
+    height: 100%;
     outline: none;
 }
 
-.contacts__name input:focus{
-    border-bottom: 2px solid #FF3C5A;
-}
-
-.contacts__email{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.contacts__email label{
+.label__name{
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #B9B9B9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    border-bottom: 1px solid #B9B9B9;   
+}
+
+.label__name::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #FF3C5A;
+    transform: translateX(-100%);
+    transition: transform .3s ease ;
+}
+.name__span{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.contacts__name input:focus + .label__name .name__span,
+.contacts__name input:valid + .label__name .name__span{
+    transform: translateY(-120%);
+}
+
+.contacts__name input:focus + .label__name::after,
+.contacts__name input:valid + .label__name::after{
+    transform: translateX(0%);
+}
+
+.contacts__email{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
 }
 
 .contacts__email input{
     background: none;
     border: none;
+    padding-top: 10px;
     margin-top: 5px;
-    border-bottom: 2px solid #B9B9B9;
+    width: 100%;
+    height: 100%;
     outline: none;
 }
 
-.contacts__email input:focus{
+.label__email{
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #B9B9B9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    border-bottom: 1px solid #B9B9B9;   
+}
+
+.label__email::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
     border-bottom: 2px solid #FF3C5A;
+    transform: translateX(-100%);
+    transition: transform .3s ease ;
+}
+
+.email_name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.contacts__email input:focus + .label__email .email_name,
+.contacts__email input:valid + .label__email .email_name{
+    transform: translateY(-120%);
+}
+
+.contacts__email input:focus + .label__email::after,
+.contacts__email input:valid + .label__email::after{
+    transform: translateX(0%);
 }
 
 .contacts__message label{

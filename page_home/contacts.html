@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>Contacts</title>
 </head>
 
 <body>
-
     <main class="main">
         <div class="container">
             <div class="header__item">
@@ -76,67 +75,43 @@
                 </ul>
 
             </div>
-            <div class="main__item">
-                <div class="main__head">
-                    <h1>Hello Startup Summer!</h1>
-                    <p> This is your task. <br>
-                        Please transform this template into HTML and CSS </p>
-                </div>
-                <div class="main__inner">
-                    <p class="main__inner-title">Horizontal row using <span>Float</span> </p>
-                    <div class="main__block float">
-                        
-                        <a class="main__block-item__float" href="#">                           
-                        </a>
-                        <a class="main__block-item__float" href="#">                           
-                        </a>
-                        <a class="main__block-item__float" href="#">                           
-                        </a>
-                        <a class="main__block-item__float" href="#">                           
-                        </a>
+            <div class="contacts">
+                <div class="contacts__item">
+                    <h1>Contacts</h1>
+                    <form class="contacts__form" action="">
+                        <div class="contacts__name">
+                            <input id="input__name_id" type="text" required autocomplete="off">
+                            <label for="input__name_id" class="label__name">
+                                <span class="name__span">Full name</span>
+                            </label>
+                        </div>
+                        <div class="contacts__email">
+                            <input id="input__email_id" type="text" required autocomplete="off">
+                            <label for="input__email_id" class="label__email">
+                                <span class="email_name">Email</span>
+                            </label>
+                        </div>
 
+                        <div class="contacts__message">
+                            <label for="input__email">Message</label>
+                            <textarea type="text"></textarea>
+                        </div>
+                    </form>
+                    <div class="btn">
+                        <input class="send__btn" type="submit" value="SEND">
                     </div>
+
+
                 </div>
-                <div class="main__inner">
-                    <p class="main__inner-title">Horizontal row using <span>Flexbox</span> </p>
-                    <div class="main__block flex">
-                        <a class="main__block-item__flex" href="#">                           
-                        </a>
-                        <a class="main__block-item__flex" href="#">                           
-                        </a>
-                        <a class="main__block-item__flex" href="#">                           
-                        </a>
-                        <a class="main__block-item__flex" href="#">                           
-                        </a>
-                        
-                    </div>
-                </div>
-                <div class="main__inner">
-                    <p class="main__inner-title">Horizontal row using <span>Grid layout</span> </p>
-                    <div class="main__block grid">
-                        <a class="main__block-item__grid" href="#">                           
-                        </a>
-                        <a class="main__block-item__grid" href="#">                           
-                        </a>
-                        <a class="main__block-item__grid" href="#">                           
-                        </a>
-                        <a class="main__block-item__grid" href="#">                           
-                        </a>
-                    </div>
-                </div>
+
+                <img class="contacts__img" src="../utils/Vector.svg" alt="">
             </div>
 
-            
-
-
-              
-
-            </div>
+        </div>
 
     </main>
 
     <script src="./app.js"></script>
-
 </body>
 
 </html>
